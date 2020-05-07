@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Drone Route Generator</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="index.html">Drone Route Generator</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#home">Inicio.</a></li>
+		         <li class="current"><a class="smoothscroll" href="#documentation">Documentación.</a></li>
+	            <li><a class="smoothscroll" href="#objetive">Objetivo.</a></li>
+				<li><a class="smoothscroll" href="#results">Resultados.</a></li>
+				<li><a class="smoothscroll" href="#attributions">Atribuciones.</a></li>
+	         </ul>
+
+	      </nav>
+
+	      <ul class="header-social">
+	        	<li><a target="blank" href="https://www.linkedin.com/in/santiago-valle-463130194/"><i class="fa fa-linkedin"></i></a></li>
+	        	<li><a target="blank" href="https://github.com/snvc00"><i class="fa fa-github"></i></a></li>
+	      </ul>      
+
+	   </div>
+
+   </header>
+
+
+   <!-- Home
+   ================================================== -->
+   <section id="home">	
+   	  
+		<div class="row home-content">
+
+			<div class="twelve columns home-container">
+
+			   <!-- slider start-->
+			   <div id="home-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Generador de rutas óptimas para
+								entregas en drone en la ciudad.
+								</h1>	
+									
+								<h3 class="">Una herramienta de software para diseñar redes de distribución y calcular la mejor ruta desde tu origen hasta el destino seleccionado.</h3>				   
+							</div>						
+					   </li>
+
+					   <!-- slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 class="">Utilizando teoría de grafos para
+									ahorrar recursos.</h1>
+
+								<h3 class="">Impulsado por una implentación del algoritmo de Dijkstra, esta herramienta capaz de ofrecer la mejor
+									solución personalizada a cada red de distribución establecida.
+								</h3>			   
+							</div>					
+					   </li>
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Para más información del proyecto revisa <a class="smoothscroll" href="#documentation">como usarlo</a> o 
+								ve directo al <a class="smoothscroll" href="#objetive">funcionamiento</a> , en donde se explica la metodología.</h1>
+
+								<h3 class="">Proyecto Final de Algoritmia</h3>			   
+							</div>
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- end slider -->				   
+
+	      </div>
+
+		</div>	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#objetive">Más información<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage -->
+
+   <div id="call-to-action">	       
+
+	<div class="row section-ads">
+
+	   <div class="twelve columns">		         		
+
+		   <h2>Descarga Drone Route Generator<span>.</span></h2>
+
+		   <p>
+			 Se puede obtener el código fuente en <a href="https://github.com/snvc00/drone-route-generator"><span>GitHub</span></a>.
+			 Dentro del repositorio también se puede consultar la <span>licencia</span> y más <span>información al usuario</span>. 				
+			 </p>
+
+			 <div class="action">
+			  <a href="https://github.com/snvc00/drone-route-generator/archive/master.zip" >Descargar</a>
+		  </div>
+
+		</div>
+
+	</div> <!-- end section-ads -->		         	         
+
+</div> <!-- end call-to-action -->	 
+
+   <!-- documentation
+   ================================================== -->
+   <section id="documentation">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Documentación<span>.</span></h1>
+
+	         <hr />               
+
+	         <p>
+				En este apartado se muestra una breve guía de uso para sacarle el máximo provecho a la funcionalidad
+				implementada en la herramienta.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- documentation-wrapper -->
+         <div id="documentation-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/documentation/register.jpg" alt="Registro">
+                     <div class="overlay"></div>                       
+                     <div class="documentation-item-meta">
+     					      <h5>Regístrate</h5>
+                        <p>Acceso</p>
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+                     <img src="images/documentation/login.jpg" alt="Iniciar Sesión">
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Iniciar Sesión</h5>
+                           <p>Acceso</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/documentation/points.jpg" alt="Agregar Puntos">                        
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Agregar Puntos</h5>
+                           <p>Funcionalidad</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/documentation/conection.jpg" alt="Agregar Conexiones">
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Agregar Conexiones</h5>
+                           <p>Funcionalidad</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                   <img src="images/documentation/route.jpg" alt="Generar Rutas">
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Generar Rutas</h5>
+                           <p>Funcionalidad</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/documentation/explore.jpg" alt="Explorar Rutas">
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Explorar Rutas</h5>
+                           <p>Funcionalidad</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-07">                        
+                     <img src="images/documentation/share.jpg" alt="Compartir Resultados">                       
+                     <div class="overlay">
+                      <div class="documentation-item-meta">
+          					   <h5>Compartir Resultados</h5>
+                           <p>Funcionalidad</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-08">
+                     <img src="images/documentation/report.jpg" alt="Reporte de errores">
+                     <div class="overlay">
+                      	<div class="documentation-item-meta">
+        					      <h5>Reporta Errores</h5>
+                           <p>Depuración</p>
+        					   </div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>                     
+                  </a>
+               </div>
+       		</div>  <!-- item end -->
+
+         </div> <!-- end documentation-wrapper -->
+         
+
+         <!-- modal popup
+	   	========================================================= -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="description-box">
+			      <h4>Registro</h4>
+			      <p>Para registrarse y poder usar la aplicación se necesita entrar en el enlace de la ventana de inicio de sesión, llenar
+					  los campos del formato de registro y dar clic en el boton 'Regístrate'.</p>
+               <span class="categories">Acceso</span>
+			  </div>
+			  
+			  <div class="media">
+				<img src="images/documentation/modals/m-register.JPG" alt="Formato de Registro" />
+			  </div>
+
+            <div class="link-box group">
+            	<a href="#documentation" class="popup-modal-dismiss">Cerrar</a>         
+            </div>
+
+	      </div><!-- modal-01 end -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      
+		      <div class="description-box">
+			      <h4>Iniciar Sesión</h4>
+			      <p>Si ya tienes una cuenta, solo introduce tu usuario y contraseña para acceder a la aplicación.</p>
+               <span class="categories">Acceso</span>
+			  </div>
+			  
+			  <div class="media">
+				<img src="images/documentation/modals/m-login.JPG" alt="Iniciar sesión" />
+			</div>
+
+            <div class="link-box">            	
+		         <a href="#documentation" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+
+	      </div><!-- modal-02 end -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+
+		      <div class="description-box">
+			      <h4>Agregar Puntos</h4>
+			      <p>Para agregar un nuevo punto basta con dar clic en el mapa en la ubicación deseada, introducir la información requerida
+					  y aceptar los cambios, en caso de que se requiera editar el punto creado es el mismo procedimiento, solo que el clic tiene
+					  que ser en la ubicación del punto a editar.</p>
+               <span class="categories">Funcionalidad</span>
+		      </div>
+
+		      <div class="media">
+				<img src="images/documentation/modals/m-points.png" alt="" />
+			</div>
+
+            <div class="link-box">
+		         <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+
+	      </div><!-- modal-03 end -->
+
+			<div id="modal-04" class="popup-modal mfp-hide">
+				
+				<div class="description-box">
+					<h4>Agregar Conexiones</h4>
+					<p>Para agregar una conexión se requiere crear al menos dos puntos primero, una vez creados al dar clic en el botón de 'Agregar Conexión'
+						se deberan el elegir un origen y destino a partir de las opciones desplegadas y confirmar la nueva
+						conexión.</p>
+				 <span class="categories">Funcionalidad</span>
+				</div>
+
+		      <div class="media">
+	      		<img src="images/documentation/modals/m-connection.jpg" alt="Agregar Conexiones" />
+	      	</div>
+
+            <div class="link-box">
+		         <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+
+	      </div><!-- modal-04 end -->
+
+	      <div id="modal-05" class="popup-modal slider mfp-hide">	   	
+
+		      <div class="description-box">
+			      <h4>Generar Rutas</h4>		      
+
+			      <p>Al dar clic en el botón de 'Generar Ruta', la aplicación ejecuta
+					  el algoritmo de Dijkstra sobre un grafo que representa a la red de distribución,
+					  pero antes de ejecutarse se requiere seleccionar un origen y un destino en
+					  los campos desplegables correspondientes.
+				  </p>
+
+			      <div class="categories">Funcionalidad</div>
+			  </div>
+			  
+			  
+	      	<div class="media">
+				<img src="images/documentation/modals/m-share.JPG" alt="" />
+			</div>   
+
+            <div class="link-box">
+		         <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>		      
+
+	      </div><!-- modal-05 end -->
+
+	      <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/documentation/modals/m-girl.jpg" alt="" />
+	      	</div>	
+
+		      <div class="description-box">
+			      <h4>Explorar Rutas</h4>			      
+
+			      <p>El usuario puede explorar las rutas previamente exportadas a su carpeta
+					  de rutas, en esta sección se puede consultar la imagen de la ruta e 
+					  información básica.
+				  </p>
+
+			      <div class="categories">Funcionalidad</div>
+               
+		      </div>
+
+            <div class="link-box">
+		         <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+
+	      </div><!-- modal-06 end -->
+
+	      <div id="modal-07" class="popup-modal mfp-hide">
+
+			<div class="description-box">
+				<h4>Compartir Resultados</h4>		      
+
+				<p>Para poder compartir los resultados, es necesario generar una ruta, después exportarla para que el archivo
+					este guardado en el almacenamiento del usuario, una vez que este archivo este disponible puede ser compartido
+					por correo electrónico dando clic en el 'Compartir Ruta' e ingresando la información requerida.</p>
+
+				<div class="categories">Funcionalidad</div>
+			</div>
+			
+			
+			<div class="media">
+			  <img src="images/documentation/modals/m-share.JPG" alt="" />
+		  </div>   
+		  
+		  <div class="media">
+			  <img src="images/documentation/modals/m-share0.JPG" alt="" />
+		  </div>   
+
+		  <div class="link-box">
+			   <a href="#" class="popup-modal-dismiss">Cerrar</a>
+		  </div>
+
+	      </div><!-- modal-07 end -->
+
+	      <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <div class="description-box">
+			      <h4>Reporta Errores</h4>			      
+
+			      <p>Esta aplicación, como todas, es suceptible a fallos, si encuentras uno puedes abrir un issue en el repositorio de GitHub
+					  o ponerte en contacto con el desarrollador a través del correo: droneroutegenerator@gmail.com.</p>
+
+			      <div class="categories">Depuración</div>
+               
+			  </div>
+			  
+			  
+		      <div class="media">
+				<img src="images/documentation/modals/m-report.JPG" alt="Reporte de errores" />
+			</div>	
+
+            <div class="link-box">
+		         <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+
+	      </div><!-- modal-08 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end documentation -->
+
+
+   <!-- objetive Section
+   ================================================== -->
+   <section id="objetive">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Objetivo y Metodología<span>.</span></h1>
+
+	         <hr />      	         
+
+	         <p>Esta herramienta fue creada con la idea de contar con procesamiento de
+				 gráfos para ser válida como proyecto final de la asignatura de Algoritmia.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+
+	            <h3>¿Qué es?</h3>
+
+	            <div class="service-content">	                  
+		            <p>
+						Es una aplicación de escritorio programada en C#, que utiliza
+						el conjunto de librerias de Windows Forms diseñado por
+						Microsoft para .NET Framework.
+	         		</p> 
+	         	</div>  
+
+				</div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+
+	            <h3>¿Para qué sirve?</h3>                  
+
+	            <div class="service-content">	                  
+		            <p>
+						Sirve para generar rutas de entrega locales optimizadas que ahorran
+						tiempo empleando caminos mínimos en una red de entrega definida, asegurando
+						la ruta más rápida de un punto a otro.
+	         		</p> 
+	            </div>	              
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	              
+
+	            <h3>¿Cuál es el beneficio?</h3>
+
+	            <div class="service-content">		                  
+		            <p>
+						El principal beneficio de esta aplicación es el de generar redes y rutas de entrega
+						de manera rápida y sencilla, además de optima apoyandose de la teoría de grafos.
+	        		</p> 
+	            </div> 	               
+
+			   </div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+	                  
+	            <h3>Procesamiento.</h3> 
+
+	            <div class="service-content">	                  
+		            <p>
+
+	         		</p>  
+	            </div>                
+
+				</div> <!-- end bgrid -->
+
+			   <div class="bgrid">
+
+	            <h3>Algoritmo de Dijkstra.</h3>
+
+	            <div class="service-content">	                  
+		            <p>
+
+					</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	               
+
+	            <h3>Complejidad Algoritmica.</h3>
+
+	            <div class="service-content">
+		            <p>
+						Expresando la complejidad en tiempo de ejecución del algoritmo de Dijkstra,
+						la función dominante asíntotica sería representa por O(n<sup>2</sup>).
+	        		</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end objetive -->
+
+
+   <!-- results Section
+   ================================================== -->
+   <section id="results">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Resultados y Conclusiones<span>.</span></h1>
+
+	         <hr />     	    
+
+	         <p>Después de varias pruebas en distintos casos de uso, la herramienta fue capaz
+				 de encontrar el resultado optimo cuando este estaba definido y podía ser calculado, 
+				 en esta sección se puede consultar información especifica de los resultados y las conclusiones
+				 del uso de esta aplicación de escritorio.
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">       	
+
+      	<div class="process bgrid-half tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+				  <h3>Resultados obtenidos.</h3>	
+				  <p>
+
+				  </p>
+
+		   	</div>
+
+      		<div class="bgrid">
+					 <img src="images/documentation/explore.jpg">
+			  </div>
+			  
+
+		      <div class="bgrid">
+
+			     	<h3>Conclusión del proyecto.</h3>	
+
+			     	<p>
+						 
+					 </p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+				<img src="images/documentation/share.jpg">
+
+		      </div>
+
+      	</div> <!-- end process -->      	
+
+     	</div> <!-- end row -->
+
+	  <section id="attributions" style="padding-top: 120px; padding-bottom: 20px;">
+
+		<div class="row section-head">
+
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+	 
+				  <h1>Atribuciones<span>.</span></h1>
+	 
+				  <hr />	         
+	 
+			   </div>
+	 
+		   </div> <!-- end section-head -->
+	
+			<div class="row">
+	
+				<div id="team-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half mob-bgrid-whole group">
+	   
+				   <div class="bgrid member">
+	   
+						   <div class="member-pic">
+							   <img src="images/team/member01-k.jpg" alt=""/>
+							<div class="mask"></div>       	
+					  </div>
+					  <div class="member-name">
+						 <h3>Santiago Valle</h3>
+						 <span>Desarrollador</span>
+					  </div>
+	   
+					  <p>Estudiante de Ingeniería en Computación en la Universidad de Guadalajara. </p>
+	   
+					  <ul class="member-social">
+						 <li><a target="blank" href="https://www.linkedin.com/in/santiago-valle-463130194/"><i class="fa fa-linkedin"></i></a></li>
+						 <li><a target="blank" href="https://www.github.com/snvc00"><i class="fa fa-github"></i></a></li>
+					  </ul>
+	   
+				   </div> <!-- end member -->
+	   
+				  
+				   <div class="bgrid member">
+									   
+						   <div class="member-pic">
+							<img src="images/team/member02-k.jpg" alt=""/>
+							<div class="mask"></div>  
+					  </div>
+					  <div class="member-name">
+						 <h3>Múltiples Contribuidores</h3>
+						 <span>Arte Dígital</span>
+					  </div>
+	   
+					  <ul style="list-style-type:none;">
+					    <li><a target="blank" href="https://unsplash.com/@gohrhyyan">Goh Rhy Yan on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@windows">Windows on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@terminath0r">Thor Alvis on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@dulgier">Anastasia Dulgier on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@jack_scorner">Thomas Griesbeck on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@arifriyanto">Arif Riyanto on Unsplash</a><br></li>
+						<li><a target="blank" href="https://unsplash.com/@priscilladupreez">Priscilla Du Preez on Unsplash</a><br></li>
+						<li><a target="blank" href="https://www.flaticon.com/authors/payungkead">Payungkead on Flaticon</a><br></li>
+						<li><a target="blank" href="https://www.flaticon.com/authors/freepik">Freepik on Flaticon</a></li>
+					  </ul>
+
+				
+	   
+	   
+				   </div> <!-- end member -->
+	   
+				</div> <!-- end team-wrapper -->
+
+				<hr>
+
+				<div>
+					<p style="text-align: center;">Recursos visuales utilizados</p>
+				</div>
+				<div style="text-align: center;">
+					<a href="https://unsplash.com/" target="blank"><img style="margin: 20px; width: 20%; height: auto; padding-bottom: 10px;" src="images/team/unsplash.jpg"></a>
+					<a href="https://www.flaticon.com/" target="blank"><img style="margin: 20px; width: 20%; height: auto; padding-bottom: 50px;" src="images/team/flaticon.jpg"></a>
+					<a href="https://www.styleshout.com/" target="blank"><img style="margin: 20px; width: 20%; height: auto;" src="images/team/styleshout.png"></a>
+				</div>
+
+		</div>
+   
+	  </section>
+
+      </div> <!-- end row -->
+
+                
+
+   </section> <!-- end results -->  
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+            <hr />
+
+            <div class="info">
+
+            	<div class="footer-logo"></div>
+
+	            <p>Proyecto Final de Algoritmia</p>	        
+	         </div>
+
+      	</div>           
+
+         <ul class="copyright">
+			 <li>Design by <a href="http://www.styleshout.com/">Styleshout.</a>.</li></br>
+			 <li>Consulta <a href="https://github.com/snvc00/drone-route-generator/blob/master/LICENSE-WEBSITE.md">aquí</a> la licencia del diseño de este sitio web</li>
+         </ul>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#home">Ir al Inicio<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
