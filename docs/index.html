@@ -400,7 +400,7 @@
 			  
 			  
 	      	<div class="media">
-				<img src="images/documentation/modals/m-share.JPG" alt="" />
+				<img src="images/documentation/modals/m-generate.JPG" alt="" />
 			</div>   
 
             <div class="link-box">
@@ -410,10 +410,6 @@
 	      </div><!-- modal-05 end -->
 
 	      <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/documentation/modals/m-girl.jpg" alt="" />
-	      	</div>	
 
 		      <div class="description-box">
 			      <h4>Explorar Rutas</h4>			      
@@ -425,6 +421,10 @@
 
 			      <div class="categories">Funcionalidad</div>
                
+		      <div class="media">
+				<img src="images/documentation/modals/m-explore.JPG" alt="" />
+			</div>	
+
 		      </div>
 
             <div class="link-box">
@@ -519,7 +519,7 @@
 	            <div class="service-content">	                  
 		            <p>
 						Es una aplicación de escritorio programada en C#, que utiliza
-						el conjunto de librerias de Windows Forms diseñado por
+						el conjunto de librerias de Windows Forms elaboradas por
 						Microsoft para .NET Framework.
 	         		</p> 
 	         	</div>  
@@ -559,7 +559,9 @@
 
 	            <div class="service-content">	                  
 		            <p>
-
+						Aplica el algoritmo de Dijkstra a un grafo previamente creado por el usuario, esta estructura de datos
+						representa la red de distribución de un negocio que requiera entregas a través de la ciudad
+						con un drone como medio de transporte.
 	         		</p>  
 	            </div>                
 
@@ -571,6 +573,10 @@
 
 	            <div class="service-content">	                  
 		            <p>
+						Desarrollado por el científico computacional Edsger Dijkstra, encuentra caminos
+						mínimos en un grafo a partir de un vértice de origen, las características que
+						requiere son: que el grafo sea conexo y ponderado con valores no negativos.
+						Puedes consultar la implementación del algoritmo en este proyecto <a target="blank" href="https://github.com/snvc00/drone-route-generator/blob/master/CreateRoutesForDroneDelivery/Dijkstra.cs">aquí</a>.
 
 					</p> 
 	            </div>	               
@@ -607,13 +613,7 @@
 
       		<h1>Resultados y Conclusiones<span>.</span></h1>
 
-	         <hr />     	    
-
-	         <p>Después de varias pruebas en distintos casos de uso, la herramienta fue capaz
-				 de encontrar el resultado optimo cuando este estaba definido y podía ser calculado, 
-				 en esta sección se puede consultar información especifica de los resultados y las conclusiones
-				 del uso de esta aplicación de escritorio.
-	         </p>
+	         <hr />     	
 
 	      </div> <!-- end section-head -->
 
@@ -627,13 +627,16 @@
 
 				  <h3>Resultados obtenidos.</h3>	
 				  <p>
-
+					Después de varias pruebas en distintos casos de uso, la herramienta fue capaz
+					de encontrar el resultado optimo cuando este estaba definido y podía ser calculado. En otras
+					palabras, cuando el grafo cumplia con los requerimientos para ejecutar el algoritmo de Dijkstra.
+					Ademas de exportar una imagen con el mapa con la ruta marcada y la distancia total de la misma.
 				  </p>
 
 		   	</div>
 
       		<div class="bgrid">
-					 <img src="images/documentation/explore.jpg">
+					 <img src="images/documentation/modals/m-generate.JPG">
 			  </div>
 			  
 
@@ -642,14 +645,11 @@
 			     	<h3>Conclusión del proyecto.</h3>	
 
 			     	<p>
-						 
-					 </p>
-
-		      </div>
-
-		      <div class="bgrid">
-
-				<img src="images/documentation/share.jpg">
+						Los principales puntos a remarcar al final de la implementación de este proyecto
+						son, en primer lugar, la capacidad escalable de una aplicación cuya base es un algoritmo
+						tan simple como el propuesto por Edsger Dijkstra para encontrar caminos mínimos, y como
+						los grafos son una forma eficiente de representar la información relacionada.
+					</p>
 
 		      </div>
 
