@@ -88,8 +88,11 @@ namespace CreateRoutesForDroneDelivery
         {
             foreach (string path in Directory.GetFiles(CurrentUser.UserFolderPath))
             {
-                ImageList_Routes.Images.Add(Path.GetFileName(path), new Bitmap(path));
-                RouteImagePath.Add(Path.GetFullPath(path));
+                if (path.Contains("createdroute"))
+                {
+                    ImageList_Routes.Images.Add(Path.GetFileName(path), new Bitmap(path));
+                    RouteImagePath.Add(Path.GetFullPath(path));
+                }
             }
         }
 
